@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Live search on the HTML table with jQuery Example - nicesnippets.com</title>
+        <script src='jquery-3.1.1.min.js' type='text/javascript'></script>
+        <style>
+           table th, table td
+           {
+              width: 100px;
+              padding: 5px;
+              border: 1px solid #ccc;
+              background: #fff;
+          }
+          .notfound{
+            display: none;
+          }
+          input{
+            padding: 5px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            border:2px solid #e0e0e0;
+          }
+        </style>
+    </head>
+    <body style="margin-left: 15%; background: #eee">
+      <h2>Live search on the HTML table with jQuery Example - nicesnippets.com</h2>
+      <input type='text' id='txt_searchall' placeholder='Enter search text'>  
+      <br/>
+      <table width="40%">
+          <thead>
+          <tr>
+              <th>No</th>
+              <th>Language</th>
+              <th>Framework</th>
+          </tr>
+          </thead>
+          <tbody>
+            
+            <tr>
+                <td>1</td>
+                <td>PHP</td>
+                <td>Laravel</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>C</td>
+                <td>C++</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Android</td>
+                <td>Webkit</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Java</td>
+                <td>Meteor</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>C#</td>
+                <td>MuPDF</td>
+            </tr>
+            <tr class='notfound'>
+              <td colspan='4'>No record found</td>
+            </tr>
+          </tbody>
+        </table>
+    </body>
